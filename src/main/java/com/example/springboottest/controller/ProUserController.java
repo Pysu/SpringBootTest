@@ -8,9 +8,10 @@ import com.example.springboottest.service.ProUserService;
 import com.example.springboottest.vo.ProUserQueryVo;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import java.util.List;
 
 /**
  * (ProUser)表控制层
@@ -22,6 +23,7 @@ import java.util.List;
 @RequestMapping("proUser")
 @Api(tags = "用户信息管理")
 public class ProUserController {
+    private final Logger logger = LoggerFactory.getLogger(this.getClass());
     @Autowired
     private ProUserService proUserService;
 
@@ -35,6 +37,7 @@ public class ProUserController {
     @ApiOperation(value = "用户新增", notes = "用户信息-用户新增")
     public RestResult<String> addUser(@RequestBody ProUser proUser) {
         proUserService.save(proUser);
+        logger.info("用户新增成功！");
         return RestResult.success();
     }
 

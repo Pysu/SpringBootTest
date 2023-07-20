@@ -2,9 +2,8 @@ package com.example.springboottest.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.example.springboottest.entity.Bus;
-import com.example.springboottest.mapper.BusMapper;
+import com.example.springboottest.mapper.protest.BusMapper;
 import com.example.springboottest.service.BusService;
-import com.example.springboottest.strategy.VehicleStrategy;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

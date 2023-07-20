@@ -5,7 +5,7 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.example.springboottest.entity.ProUser;
-import com.example.springboottest.mapper.ProUserMapper;
+import com.example.springboottest.mapper.protest.ProUserMapper;
 import com.example.springboottest.service.ProUserService;
 import com.example.springboottest.util.CommonDataUtil;
 import com.example.springboottest.vo.ProUserQueryVo;

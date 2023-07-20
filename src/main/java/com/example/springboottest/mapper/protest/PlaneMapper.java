@@ -1,4 +1,4 @@
-package com.example.springboottest.mapper;
+package com.example.springboottest.mapper.protest;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.example.springboottest.entity.Plane;

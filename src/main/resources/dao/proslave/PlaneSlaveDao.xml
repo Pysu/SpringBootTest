@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.springboottest.mapper.proslave.PlaneSlaveMapper">
+
+    <resultMap type="com.example.springboottest.entity.PlaneSlave" id="PlaneSlaveMap">
+        <result property="id" column="id" jdbcType="VARCHAR"/>
+        <result property="price" column="price" jdbcType="VARCHAR"/>
+        <result property="startPoint" column="start_point" jdbcType="VARCHAR"/>
+        <result property="endPoint" column="end_point" jdbcType="VARCHAR"/>
+        <result property="userId" column="user_id" jdbcType="VARCHAR"/>
+    </resultMap>
+
+</mapper>
+

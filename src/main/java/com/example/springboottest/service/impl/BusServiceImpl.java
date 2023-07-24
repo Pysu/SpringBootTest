@@ -1,12 +1,11 @@
 package com.example.springboottest.service.impl;
 
+import com.baomidou.dynamic.datasource.annotation.DS;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.example.springboottest.entity.Bus;
 import com.example.springboottest.mapper.BusMapper;
 import com.example.springboottest.service.BusService;
-import com.example.springboottest.strategy.VehicleStrategy;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 
 /**
@@ -28,6 +27,7 @@ public class BusServiceImpl extends ServiceImpl<BusMapper, Bus> implements BusSe
         return "go by Bus!";
     }
 
+    @DS("protest")
     @Override
     public List<Bus> getALlBus() {
         try {

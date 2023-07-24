@@ -1,5 +1,6 @@
 package com.example.springboottest.controller;
 
+import com.baomidou.dynamic.datasource.annotation.DS;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.example.springboottest.common.CommonQueryVo;
 import com.example.springboottest.common.RestResult;
@@ -27,12 +28,14 @@ public class ProUserController {
     @Autowired
     private ProUserService proUserService;
 
+    @DS("protest")
     @PostMapping("/getUserList")
     @ApiOperation(value = "列表查询", notes = "用户信息-列表查询")
     public RestResult<IPage<ProUser>> getUserList(@RequestBody ProUserQueryVo proUserQueryVo) {
         return RestResult.success(proUserService.pageList(proUserQueryVo));
     }
 
+    @DS("protest")
     @PostMapping("/addUser")
     @ApiOperation(value = "用户新增", notes = "用户信息-用户新增")
     public RestResult<String> addUser(@RequestBody ProUser proUser) {

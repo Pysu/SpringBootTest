@@ -1,10 +1,11 @@
 package com.example.springboottest;
 
+import com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
+@SpringBootApplication(exclude = {DruidDataSourceAutoConfigure.class})
 @MapperScan(basePackages = {"com.example.springboottest.mapper"})
 public class SpringBootTestApplication {
 

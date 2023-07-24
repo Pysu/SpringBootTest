@@ -1,13 +1,11 @@
 package com.example.springboottest.service.impl;
 
+import com.baomidou.dynamic.datasource.annotation.DS;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.example.springboottest.entity.Train;
 import com.example.springboottest.mapper.TrainMapper;
 import com.example.springboottest.service.TrainService;
-import com.example.springboottest.strategy.VehicleStrategy;
 import org.springframework.stereotype.Service;
-
-import java.util.Collections;
 import java.util.List;
 
 /**
@@ -29,6 +27,7 @@ public class TrainServiceImpl extends ServiceImpl<TrainMapper, Train> implements
         return "go by train!";
     }
 
+    @DS("protest")
     @Override
     public List<Train> getALlTrain() {
         try {

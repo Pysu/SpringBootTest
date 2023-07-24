@@ -1,5 +1,6 @@
 package com.example.springboottest.service.impl;
 
+import com.baomidou.dynamic.datasource.annotation.DS;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
@@ -19,6 +20,7 @@ import org.springframework.stereotype.Service;
  */
 @Service("proUserService")
 public class ProUserServiceImpl extends ServiceImpl<ProUserMapper, ProUser> implements ProUserService {
+    @DS("protest")
     @Override
     public IPage<ProUser> pageList(ProUserQueryVo proUserQueryVo) {
         QueryWrapper<ProUser> queryWrapper = new QueryWrapper<>();

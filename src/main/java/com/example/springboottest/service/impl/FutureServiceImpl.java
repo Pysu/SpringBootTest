@@ -1,5 +1,6 @@
 package com.example.springboottest.service.impl;
 
+import com.baomidou.dynamic.datasource.annotation.DS;
 import com.example.springboottest.entity.Bus;
 import com.example.springboottest.entity.Plane;
 import com.example.springboottest.entity.Train;
@@ -10,7 +11,6 @@ import com.example.springboottest.service.TrainService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StopWatch;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -27,6 +27,7 @@ public class FutureServiceImpl implements FutureService {
     @Autowired
     private TrainService trainService;
 
+    @DS("protest")
     @Override
     public List<Object> getVehicleAsync() {
         StopWatch stopWatch = new StopWatch();

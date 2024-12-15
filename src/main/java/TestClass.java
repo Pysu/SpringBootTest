@@ -10,5 +10,6 @@ public class TestClass {
         String str = "Hello World!";
         System.out.println(str);
         System.out.println();
+        System.out.println("Hello World");
     }
 }

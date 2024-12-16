@@ -7,6 +7,7 @@ package src.main.java;
  */
 public class TestIO {
     public static void main(String[] args) {
-        System.out.println("当前是IO类");
+        String str = "AAA";
+        System.out.println(str);
     }
 }

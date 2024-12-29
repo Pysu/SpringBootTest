@@ -7,10 +7,5 @@ package src.main.java;
  */
 public class NewClass {
     public static void main(String[] args) {
-        System.out.println("new Class");
-        System.out.println("change work");
-        System.out.println("end work");
-        System.out.println("new Work");
-        System.out.println("new Work");
     }
 }

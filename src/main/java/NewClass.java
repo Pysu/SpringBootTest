@@ -10,5 +10,6 @@ public class NewClass {
         System.out.println("new Class");
         System.out.println("change work");
         System.out.println("end work");
+        System.out.println("new Work");
     }
 }

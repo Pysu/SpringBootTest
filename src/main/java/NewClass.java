@@ -10,5 +10,6 @@ public class NewClass {
         System.out.println("main first");
         System.out.println("main second");
         System.out.println("test first");
+        System.out.println("test second");
     }
 }
